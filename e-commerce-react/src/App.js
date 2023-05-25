@@ -1,4 +1,4 @@
-import { Categories, Home, Login, Signup } from "./pages"
+import { Home, Login, Signup } from "./pages"
 import { NavBar } from "./components/layout/navBar"
 import { ItemListContainer } from "./components/common/containers/itemListContainer/itemListContainer"
 
@@ -9,8 +9,7 @@ function App() {
       <ItemListContainer greeting="Bienvenidos a la web"/>
       <Home/>
       {/* <Signup/>
-      <Login/>
-      <Categories/> */}
+      <Login/> */}
     </div>
   );
 }
