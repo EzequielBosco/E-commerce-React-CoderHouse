@@ -1,12 +1,11 @@
-
 const Categories = () => {
     return (
         <ul>
-            <a href="index.html"><li>Mac</li></a>
-            <a href="index.html"><li>iPad</li></a>
-            <a href="index.html"><li>iPhone</li></a>
-            <a href="index.html"><li>Apple Watch</li></a>
-            <a href="index.html"><li>Airpods</li></a>
+            <li><a href="index.html">Mac</a></li>
+            <li><a href="index.html">iPad</a></li>
+            <li><a href="index.html">iPhone</a></li>
+            <li><a href="index.html">Apple Watch</a></li>
+            <li><a href="index.html">Airpods</a></li>
         </ul>
     )
 } 

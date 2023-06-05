@@ -10,7 +10,7 @@ form {
 
 nav {
     color: black;
-    transition: background-color 1.2s ease;
+    transition: 1.2s ease;
 }
 
 nav:hover {
@@ -42,4 +42,25 @@ a:hover {
     color: rgb(56, 56, 56);
     text-decoration: underline;
     text-decoration-color: rgb(10, 10, 10);
+}
+
+main {
+    height: 25rem;
+}
+
+section {
+    background-color: rgb(19, 19, 19);
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#list-products {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    flex-wrap: wrap;
+    justify-content: center;
 }
