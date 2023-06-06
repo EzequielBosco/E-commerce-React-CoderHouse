@@ -1,4 +1,4 @@
-export { Product } from "./product"
+export { Product } from "./containers/productListContainer/product"
 export { Button } from "./button"
-export { ItemListContainer } from "./containers/itemListContainer/itemListContainer"
-export { ProductList } from "./containers/productList"
+export { ProductList } from "./containers/productListContainer/productList"
+export { ProductDetail } from "./containers/productDetailContainer/productDetail"

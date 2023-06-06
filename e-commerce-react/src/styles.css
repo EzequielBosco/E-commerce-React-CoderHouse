@@ -5,7 +5,6 @@ body {
 
 form {
     margin: 15px;
-    max-width: 500px;
 }
 
 nav {
@@ -18,15 +17,17 @@ nav:hover {
 }
 
 ul {
+    gap: 40px;
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    margin-top: 10px;
+    padding: 0;
+    margin: 0;
 }
 
 ul li {
-    padding-right: 45px;
+    font-size: 15px;
 }
 
 a {
@@ -36,6 +37,8 @@ a {
 
 a:active {
     color: rgb(27, 27, 27);
+    text-decoration: underline;
+    text-decoration-color: rgb(10, 10, 10);
 }
 
 a:hover {
@@ -63,4 +66,24 @@ section {
     gap: 20px;
     flex-wrap: wrap;
     justify-content: center;
+}
+
+.btn-product {
+    color: #090909;
+    padding: 4px;
+    font-size: 18px;
+    border-radius: 0.5em;
+    background: #e8e8e8;
+    border: 1px solid #e8e8e8;
+    transition: all .3s;
+    box-shadow: 2px 2px 2px #8f8f8f;
+    margin-top: auto;
+}
+.btn-product:hover {
+    border: 1px solid white;
+    box-shadow: 2px 2px 3px #e0e0e0
+}
+      
+.btn-product:active {
+    box-shadow: 1px 1px 2px #b6b6b6
 }

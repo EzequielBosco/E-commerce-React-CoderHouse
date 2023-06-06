@@ -1,11 +1,13 @@
+import { NavLink } from "react-router-dom"
+
 const Categories = () => {
     return (
-        <ul>
-            <li><a href="index.html">Mac</a></li>
-            <li><a href="index.html">iPad</a></li>
-            <li><a href="index.html">iPhone</a></li>
-            <li><a href="index.html">Apple Watch</a></li>
-            <li><a href="index.html">Airpods</a></li>
+        <ul className="d-flex align-items-center justify-content-evenly">
+            <li><NavLink to="/catalogue">Mac</NavLink></li>
+            <li><NavLink to="/catalogue">iPad</NavLink></li>
+            <li><NavLink to="/catalogue">iPhone</NavLink></li>
+            <li><NavLink to="/catalogue">Apple</NavLink></li>
+            <li><NavLink to="/catalogue">Airpods</NavLink></li>
         </ul>
     )
 } 

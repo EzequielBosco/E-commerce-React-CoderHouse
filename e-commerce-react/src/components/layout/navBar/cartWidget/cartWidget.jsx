@@ -1,5 +1,6 @@
 import { useEffect, useState } from 'react'
 import cartImage from '../../../../assets/carrito-de-compras.png'
+import { NavLink } from 'react-router-dom'
 
 const CartWidget = () => {
 
@@ -14,8 +15,8 @@ const CartWidget = () => {
     }, [contador])
 
     return (
-        <div>
-            <a href="index.html"><img src={cartImage} height="20px" /></a>                
+        <div className='d-flex'>
+            <NavLink to="/"><img src={cartImage} height="18px" /></NavLink>              
             <span>({contador})</span>
             <button onClick={incremento}>Incrementar</button>
         </div>
