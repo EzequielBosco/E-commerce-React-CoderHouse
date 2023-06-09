@@ -1,5 +1,13 @@
+:root {
+    --color-fondo: rgb(235, 235, 235);
+    --color-oscuro: rgb(19, 19, 19);
+    --color-oscuro-hover: rgb(19, 19, 19);
+    --color-detalles: rgba(71, 118, 219, 0.938);
+    --color-detalles-hover: rgb(83, 129, 228);
+}
+
 body {
-    background-color: rgb(240, 240, 240);
+    background-color: var(--color-fondo);
     color: rgb(0, 0, 0);
 }
 
@@ -7,13 +15,8 @@ form {
     margin: 15px;
 }
 
-nav {
-    color: black;
-    transition: 1.2s ease;
-}
-
-nav:hover {
-    background-color: rgb(248, 248, 248)
+h1 {
+    text-shadow: 1px 1px 4px rgb(179, 172, 172);
 }
 
 ul {
@@ -30,6 +33,12 @@ ul li {
     font-size: 15px;
 }
 
+ul .active {
+    text-decoration: underline;
+    text-decoration-color: var(--color-detalles);
+}
+
+
 a {
     color:black;
     text-decoration: none;
@@ -38,21 +47,21 @@ a {
 a:active {
     color: rgb(27, 27, 27);
     text-decoration: underline;
-    text-decoration-color: rgb(10, 10, 10);
+    text-decoration-color: var(--color-detalles);
 }
 
 a:hover {
     color: rgb(56, 56, 56);
     text-decoration: underline;
-    text-decoration-color: rgb(10, 10, 10);
+    text-decoration-color: var(--color-detalles);
 }
 
 main {
-    height: 25rem;
+    height: 50rem;
 }
 
 section {
-    background-color: rgb(19, 19, 19);
+    background-color: var(--color-oscuro);
     color: white;
     display: flex;
     flex-direction: column;
@@ -60,30 +69,14 @@ section {
     align-items: center;
 }
 
-#list-products {
-    display: flex;
-    flex-direction: row;
-    gap: 20px;
-    flex-wrap: wrap;
-    justify-content: center;
+.white {
+    color: white;
 }
 
-.btn-product {
-    color: #090909;
-    padding: 4px;
-    font-size: 18px;
-    border-radius: 0.5em;
-    background: #e8e8e8;
-    border: 1px solid #e8e8e8;
-    transition: all .3s;
-    box-shadow: 2px 2px 2px #8f8f8f;
-    margin-top: auto;
+.black {
+    color: black;
 }
-.btn-product:hover {
-    border: 1px solid white;
-    box-shadow: 2px 2px 3px #e0e0e0
-}
-      
-.btn-product:active {
-    box-shadow: 1px 1px 2px #b6b6b6
+
+.no-style li {
+    list-style: none;
 }

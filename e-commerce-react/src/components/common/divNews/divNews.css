@@ -1,0 +1,15 @@
+#container-div {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    flex-wrap: wrap;
+    margin: 40px;
+}
+
+.div-news {
+    width: 20rem;
+	height: 30rem;
+    background-color: rgb(235, 235, 235);
+    color: white;
+    border-radius: 25px;
+}

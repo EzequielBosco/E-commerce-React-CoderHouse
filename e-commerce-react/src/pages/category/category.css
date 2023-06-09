@@ -1,0 +1,38 @@
+#main-catalogue {
+    margin: 25px;
+    width: auto;
+    height: auto;
+}
+
+#categories {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: start;
+    gap: 3rem;
+}
+
+.category {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 15px;
+}
+
+#category-list {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin: 20px;
+}
+
+#section-category {
+    background-color: var(--color-fondo);
+}
+
+#category-detail {
+    background-color: var(--color-oscuro);
+    padding: 20px
+}

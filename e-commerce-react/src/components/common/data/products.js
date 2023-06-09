@@ -73,7 +73,7 @@ const products = [
         id: 6,
         name: 'MacBook Air',
         category: 'Mac',
-        price: 499999,
+        price: 699999,
         stock: 10,
         image: {
             front: 'macbook-air-front.jpg',
@@ -143,7 +143,7 @@ const products = [
         id: 11,
         name: 'Mac Mini',
         category: 'Mac',
-        price: 699,
+        price: 239999,
         stock: 8,
         image: {
             front: 'mac-mini-front.jpg',
@@ -157,7 +157,7 @@ const products = [
         id: 12,
         name: 'iPad Mini',
         category: 'iPad',
-        price: 499,
+        price: 199999,
         stock: 12,
         image: {
             front: 'ipad-mini-front.jpg',
@@ -171,7 +171,7 @@ const products = [
         id: 13,
         name: 'iPhone SE',
         category: 'iPhone',
-        price: 399,
+        price: 199999,
         stock: 10,
         image: {
             front: 'iphone-se-front.jpg',
@@ -185,7 +185,7 @@ const products = [
         id: 14,
         name: 'Apple Watch Series 7',
         category: 'Apple Watch',
-        price: 499,
+        price: 249999,
         stock: 8,
         image: {
             front: 'apple-watch-series-7-front.jpg',
@@ -199,7 +199,7 @@ const products = [
         id: 15,
         name: 'AirPods 3rd Generation',
         category: 'AirPods',
-        price: 179,
+        price: 79999,
         stock: 12,
         image: {
             front: 'airpods-3rd-gen-front.jpg',
@@ -213,7 +213,7 @@ const products = [
         id: 16,
         name: 'Mac Pro',
         category: 'Mac',
-        price: 5999,
+        price: 2799999,
         stock: 5,
         image: {
             front: 'mac-pro-front.jpg',
@@ -225,12 +225,12 @@ const products = [
     },
     {
         id: 17,
-        name: 'iPad',
+        name: 'iPad 10',
         category: 'iPad',
-        price: 329,
+        price: 189999,
         stock: 15,
         image: {
-            front: 'ipad-front.jpg',
+            front: 'ipad-10-front.png',
             back: 'ipad-back.jpg',
             left: 'ipad-left.jpg',
             right: 'ipad-right.jpg'
@@ -239,23 +239,23 @@ const products = [
     },
     {
         id: 18,
-        name: 'iPhone 11',
+        name: 'iPhone 14',
         category: 'iPhone',
-        price: 699,
-        stock: 10,
+        price: 799999,
+        stock: 5,
         image: {
-            front: 'iphone-11-front.jpg',
-            back: 'iphone-11-back.jpg',
-            left: 'iphone-11-left.jpg',
-            right: 'iphone-11-right.jpg'
+            front: 'iphone-14-front.png',
+            back: 'iphone-14-back.jpg',
+            left: 'iphone-14-left.jpg',
+            right: 'iphone-14-right.jpg'
         },
-        description: 'El iPhone 11 con cámara dual avanzada, rendimiento rápido y batería de larga duración.'
+        description: 'El iPhone 14 cuenta con una pantalla de 6,1 pulgadas (15 cm) y 6,7 pulgadas (17 cm), mejoras en la cámara trasera y conectividad satelital.'
     },
     {
         id: 19,
         name: 'Apple Watch Series 5',
         category: 'Apple Watch',
-        price: 349,
+        price: 169999,
         stock: 8,
         image: {
             front: 'apple-watch-series-5-front.jpg',
@@ -269,7 +269,7 @@ const products = [
         id: 20,
         name: 'AirPods 2nd Generation',
         category: 'AirPods',
-        price: 159,
+        price: 79999,
         stock: 12,
         image: {
             front: 'airpods-2nd-gen-front.jpg',
