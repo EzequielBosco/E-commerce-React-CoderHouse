@@ -3,12 +3,27 @@ import { Link } from "react-router-dom"
 import { Button } from "../../components/common"
 import { DivNews } from "../../components/common"
 import ReactPlayer from "react-player"
+import { useState, useEffect } from "react"
 
 const Home = () => {
+
+    const [showText, setShowText] = useState(true);
+    
+    useEffect(() => {
+        const timer = setTimeout(() => {
+        setShowText(false);
+        }, 1720);
+    
+        return () => {
+        clearTimeout(timer);
+        };
+    }, []);
+
     return (
         <div>
             <main id="main-home">
                 <ReactPlayer className="react-player" url={require("../../assets/home-video.mp4")} playing loop muted width="100%" height="100%" />
+            {showText && (<div id="text-video"><h1 className="white">PROXIMAMENTE</h1></div>)}
             </main>
             <section id="section-1-home">
                 <h4 className="container text-center pt-4 pre-title ">Nuevo</h4>

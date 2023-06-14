@@ -3,7 +3,7 @@
     --color-oscuro: rgb(19, 19, 19);
     --color-oscuro-hover: rgb(19, 19, 19);
     --color-detalles: rgba(71, 118, 219, 0.938);
-    --color-detalles-hover: rgb(83, 129, 228);
+    --color-detalles-hover: rgb(101, 141, 228);
 }
 
 body {
@@ -16,7 +16,7 @@ form {
 }
 
 h1 {
-    text-shadow: 1px 1px 4px rgb(179, 172, 172);
+    text-shadow: 1px 1px 3px rgb(199, 197, 197);
 }
 
 ul {
@@ -79,4 +79,9 @@ section {
 
 .no-style li {
     list-style: none;
+}
+
+.separador {
+    height:2px;
+    background-color: var(--color-fondo);
 }

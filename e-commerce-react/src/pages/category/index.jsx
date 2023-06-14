@@ -1,5 +1,5 @@
 import "./category.css"
-import { CategoryList } from "../../components/common/index"
+import { CategoryList, ProductList } from "../../components/common/index"
 
 const Category = () => {
 
@@ -13,8 +13,11 @@ const Category = () => {
                     <CategoryList/>
                 </div>
             </section>
+            <div className="separador"></div>
             <section id="section-category">
-                
+                <h2 className="m-3">Todos los productos</h2>
+                <ProductList />
+                <br/>
             </section>
         </div>
     )
