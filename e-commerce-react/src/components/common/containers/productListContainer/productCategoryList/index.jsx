@@ -1,5 +1,5 @@
 import { Product } from "../product"
-import products from "../../../data/products"
+import products from "../../../../../data/products"
 import { useEffect, useState } from "react";
 
 const getProducts = () => {

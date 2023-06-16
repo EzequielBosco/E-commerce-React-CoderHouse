@@ -19,6 +19,13 @@
     color:white;
 }
 
+.card-product .info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
 .card-product:hover {
     box-shadow: 0.1px 5px 10px 0px rgba(99, 113, 134, 0.452);
     transform:translateY(-4px);
@@ -33,5 +40,14 @@
     background: linear-gradient(#ffffff, #f7f9fd);
     display: flex;
     align-items: top;
-    justify-content: right;
+    justify-content: center;
+}
+
+#price {
+    border: 0.5px solid;
+    border-radius: 10px;
+    width: 10rem;
+    padding: 2px 2px 4px;
+    display: flex;
+    justify-content: center;
 }

@@ -9,10 +9,10 @@ const Category = ({category}) => {
     const isActive = location.pathname === `/productList/${category}`;
 
     return (
-        <div className={`div-categories ${isActive ? "active" : ""}`}>
-            <NavLink to={`/productList/${category}`}>
+        <div className={`${isActive ? "active" : ""}`}>
+            <NavLink className="div-categories" to={`/productList/${category}`}>
                 <img src={image} width="50px"></img>
-                <h3 className={`category-item ${isActive ? "underline" : ""}`}>{category}</h3>
+                <h3 className="category-item">{category}</h3>
             </NavLink>
         </div>
     )

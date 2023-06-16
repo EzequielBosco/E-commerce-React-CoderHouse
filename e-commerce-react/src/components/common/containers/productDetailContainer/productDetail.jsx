@@ -1,12 +1,29 @@
-import products from "../../data/products"
+import products from "../../../../data/products"
 import { useParams } from "react-router-dom"
 import "./productDetail.css"
+import { Button } from "../../button"
+import { useEffect } from "react"
+import { useState } from "react"
 
 function ProductDetail() {
     const params = useParams()
     let productId = Number(params.id)
 
     const product = products.find((product) => product.id === productId)
+
+    const [contador, setContador] = useState(0)
+
+    const incremento = () => {
+        setContador(prev => prev + 1)
+    }
+
+    const decremento = () => {
+        setContador(prev => prev - 1)
+    }
+
+    useEffect( () => {
+        console.log("aumenta")
+    }, [contador])
 
     if (!product) {
         return(
@@ -20,7 +37,7 @@ function ProductDetail() {
 
     return(
         <div className="container">
-            <div className="container">
+            <div className="container mt-2">
                 <h2>{product.name}</h2>
                 <hr></hr>
             </div>
@@ -31,9 +48,18 @@ function ProductDetail() {
                 <div className="info">
                     <h2 className="title-detail">{product.name}</h2>
                     <h3>Categoría: {product.category}</h3>
-                    <h5>Precio: {product.price}</h5>
+                    <h5 id="price">Precio: {product.price}</h5>
                     <p>Unidades: {product.stock}</p>
                     <small>{product.description}</small>
+                    <br></br>
+                    <div className="d-flex align-items-center gap-3">
+                        <Button onClick={decremento} className="btn-product">+</Button>
+                        <h5>({contador})</h5>
+                        <Button onClick={incremento} className="btn-product">+</Button>
+                        <Button className="button-color">
+                            Agregar al carrito
+                        </Button>
+                    </div>
                 </div>
             </div>
         </div>

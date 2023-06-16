@@ -1,14 +1,6 @@
 import { Product } from "../product"
-import products from "../../../data/products"
 import { useEffect, useState } from "react";
-
-const getProducts = () => {
-    return new Promise((resolve) => {
-        setTimeout(() => {
-            resolve(products)
-        }, 800)
-    })
-}
+import { getProducts } from "../../../../../services/products";
 
 const ProductList = () => {
 

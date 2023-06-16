@@ -1,4 +1,4 @@
-import products from "../../data/products.js"
+import products from "../../../../data/products.js"
 import { useParams } from "react-router-dom"
 import { ProductCategoryList } from "../productListContainer/productCategoryList/index.jsx"
 import { CategoryList } from "../categoryListContainer/categoryList/categoryList.jsx"

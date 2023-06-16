@@ -31,7 +31,7 @@ const Home = () => {
             </section>
             <section id="imagen-section-2-home">
             <h2 className="text-center m-3 p-2 title">Maravilla tras maravilla.</h2>
-            <Link to="/productList/iphone/18"><Button id="button-color">Más información</Button></Link>
+            <Link to="/productList/iphone/18"><Button className="button-color">Más información</Button></Link>
             </section>
             <section id="section-2-home">
                 <DivNews/>

@@ -12,13 +12,15 @@
 }
 .btn-product:hover {
     background-color: var(--color-detalles-hover);
+    transform: translateY(0.05em);
 }
       
 .btn-product:active {
-    box-shadow: none
+    box-shadow: none;
+    transform: translateY(0);
 }
 
-#button-color {
+.button-color {
     font-size: 15px;
     outline: 0;
     border: 0;
@@ -33,12 +35,12 @@
     transition: 0.15s ease, 0.15s ease;
 }
 
-#button-color:hover {
+.button-color:hover {
     box-shadow: 0px 0.1em 0.2em rgb(45 35 66 / 40%), 0px 0.4em 0.7em -0.1em rgb(45 35 66 / 30%), inset 0px -0.1em 0px #3c4fe0;
     transform: translateY(-0.1em);
 }
 
-#button-color:active {
+.button-color:active {
     box-shadow: inset 0px 0.1em 0.6em var(--color-detalles);
     transform: translateY(0);
 }
