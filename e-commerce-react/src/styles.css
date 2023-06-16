@@ -46,12 +46,25 @@ a {
 
 a:active {
     color: rgb(27, 27, 27);
-    text-decoration: underline;
-    text-decoration-color: var(--color-detalles);
+    text-decoration: none;
 }
 
 a:hover {
     color: rgb(56, 56, 56);
+    text-decoration: none;
+}
+
+.underline:active {
+    text-decoration: underline;
+    text-decoration-color: var(--color-detalles);
+}
+
+.underline:hover {
+    text-decoration: underline;
+    text-decoration-color: var(--color-detalles);
+}
+
+.active {
     text-decoration: underline;
     text-decoration-color: var(--color-detalles);
 }
@@ -79,9 +92,4 @@ section {
 
 .no-style li {
     list-style: none;
-}
-
-.separador {
-    height:2px;
-    background-color: var(--color-fondo);
 }

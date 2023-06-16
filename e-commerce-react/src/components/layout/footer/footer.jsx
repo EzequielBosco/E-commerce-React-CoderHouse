@@ -7,7 +7,7 @@ const Footer = () => {
                 <p>Copyright © 2023 Apple Inc. Todos los derechos reservados.</p>
             </div>
             <div className="col d-flex flex-column align-items-center justify-content-center">
-                <p>Sitio web diseñado por <a className="underline" target="blank" href="https://github.com/EzequielBosco">- Ezequiel Bosco -</a></p>
+                <p>Sitio web diseñado por <a className="underline white" target="blank" href="https://github.com/EzequielBosco">- Ezequiel Bosco -</a></p>
             </div>
             <div className="col d-flex flex-column align-items-center justify-content-center">
                 3

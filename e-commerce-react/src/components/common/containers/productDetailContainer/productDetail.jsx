@@ -19,16 +19,22 @@ function ProductDetail() {
     const image = require(`../../../../assets/${product.image.front}`)
 
     return(
-        <div className="productDetail">
-            <div className="img">
-                <img src={image} height="300px" alt={product.name + "-image-front"} />
-            </div>
-            <div className="info">
+        <div className="container">
+            <div className="container">
                 <h2>{product.name}</h2>
-                <span>Categoría: {product.category}</span>
-                <p>Stock: {product.stock}</p>
-                <small>Precio: {product.price}</small>
-                <p>{product.description}</p>
+                <hr></hr>
+            </div>
+            <div className="productDetail">
+                <div className="img">
+                    <img src={image} height="300px" alt={product.name + "-image-front"} />
+                </div>
+                <div className="info">
+                    <h2 className="title-detail">{product.name}</h2>
+                    <h3>Categoría: {product.category}</h3>
+                    <h5>Precio: {product.price}</h5>
+                    <p>Unidades: {product.stock}</p>
+                    <small>{product.description}</small>
+                </div>
             </div>
         </div>
     )

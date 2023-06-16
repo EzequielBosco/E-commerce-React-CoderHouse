@@ -1,5 +1,5 @@
 export { Signup } from "./signup"
 export { Login } from "./login"
 export { Home } from "./home"
-export { Category } from "./category"
+export { ProductListPage } from "./productListPage"
 export { Contact } from "./contact"

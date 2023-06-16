@@ -44,7 +44,7 @@ const products = [
     {
         id: 4,
         name: 'Apple Watch Series 6',
-        category: 'Apple Watch',
+        category: 'Watch',
         price: 199999,
         stock: 10,
         image: {
@@ -114,7 +114,7 @@ const products = [
     {
         id: 9,
         name: 'Apple Watch SE',
-        category: 'Apple Watch',
+        category: 'Watch',
         price: 149999,
         stock: 15,
         image: {
@@ -184,7 +184,7 @@ const products = [
     {
         id: 14,
         name: 'Apple Watch Series 7',
-        category: 'Apple Watch',
+        category: 'Watch',
         price: 249999,
         stock: 8,
         image: {
@@ -211,9 +211,9 @@ const products = [
     },
     {
         id: 16,
-        name: 'Mac Pro',
+        name: 'MacBook Pro',
         category: 'Mac',
-        price: 2799999,
+        price: 1299999,
         stock: 5,
         image: {
             front: 'mac-pro-front.jpg',
@@ -221,7 +221,7 @@ const products = [
             left: 'mac-pro-left.jpg',
             right: 'mac-pro-right.jpg'
         },
-        description: 'El Mac Pro poderoso y expansible para las tareas más exigentes en diseño y desarrollo.'
+        description: 'La MacBook Pro estrena una potencia y una eficiencia sin precedentes de la mano de los chips M2 Pro y M2 Max. Tiene un rendimiento fuera de serie, incluso cuando no está conectada a la corriente., ahora hasta 16 pulgadas.'
     },
     {
         id: 17,
@@ -254,7 +254,7 @@ const products = [
     {
         id: 19,
         name: 'Apple Watch Series 5',
-        category: 'Apple Watch',
+        category: 'Watch',
         price: 169999,
         stock: 8,
         image: {

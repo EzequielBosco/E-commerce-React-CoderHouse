@@ -10,7 +10,7 @@ const Product = ({id, name, category, price, status}) => {
         <div className="d-flex flex-column mt-2">
             <h3 className={name}>{name}</h3>
             <span>Categoría: {category}</span>
-            <Link to={`/category/${category}/${id}`}><Button className="btn-product" type="submit">Ver más</Button></Link>
+            <Link to={`/productList/${category}/${id}`}><Button className="btn-product" type="submit">Ver más</Button></Link>
         </div>
     </div>
     )
