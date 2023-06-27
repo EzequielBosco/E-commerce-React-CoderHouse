@@ -2,7 +2,7 @@ import { NavLink, useLocation } from "react-router-dom"
 import "../category.css"
 
 const Category = ({category}) => {
-    const image = require(`../../../../../assets/${category}.png`)
+    const image = require(`../../../../assets/${category}.png`)
 
     const location = useLocation();
 
@@ -12,7 +12,7 @@ const Category = ({category}) => {
         <div className={`${isActive ? "active" : ""}`}>
             <NavLink className="div-categories" to={`/productList/${category}`}>
                 <img src={image} width="50px"></img>
-                <h3 className="category-item">{category}</h3>
+                <h4 className="category-item">{category}</h4>
             </NavLink>
         </div>
     )

@@ -1,7 +1,3 @@
-export { Product } from "./containers/productListContainer/product"
 export { Button } from "./button"
-export { ProductList } from "./containers/productListContainer/productList"
-export { ProductDetail } from "./containers/productDetailContainer/productDetail"
 export { DivNews } from "./divNews"
-export { CategoryList } from "./containers/categoryListContainer/categoryList/categoryList"
-export { CategoryDetail } from "./containers/categoryDetailContainer/categoryProductDetail"
+export { Select } from "./select"

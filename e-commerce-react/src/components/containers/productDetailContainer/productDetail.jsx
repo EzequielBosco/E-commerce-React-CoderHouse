@@ -1,15 +1,21 @@
-import products from "../../../../data/products"
 import { useParams } from "react-router-dom"
 import "./productDetail.css"
-import { Button } from "../../button"
+import { Button } from "../../common/button"
 import { useEffect } from "react"
 import { useState } from "react"
+import { getProduct } from "../../../services/products"
 
 function ProductDetail() {
-    const params = useParams()
-    let productId = Number(params.id)
 
-    const product = products.find((product) => product.id === productId)
+    const { id } = useParams()
+
+    const [product, setProduct] = useState()
+
+    useEffect(() => {
+        getProduct(id).then((product) => {
+            setProduct(product)
+        })
+    }, [id])
 
     const [contador, setContador] = useState(0)
 
@@ -33,7 +39,7 @@ function ProductDetail() {
         )
     }
 
-    const image = require(`../../../../assets/${product.image.front}`)
+    const image = require(`../../../assets/${product.image.front}`)
 
     return(
         <div className="container">

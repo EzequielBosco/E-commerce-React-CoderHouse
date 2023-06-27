@@ -1,13 +1,16 @@
 import products from "../../data/products";
 
-const getCategories = async () => {
-    return Promise((resolve, reject) => {
-        resolve(products)}
+const getCategories = async (category) => {
+    return new Promise((resolve, reject) => {
+        const productsFilter = products.filter((product) => product.category == category)
+        setTimeout(() => {
+            resolve(productsFilter)
+        }, 800)}
 )}
 
-const getCategory = async (id) => {
-    return Promise((resolve, reject) => {
-        resolve(category.find((category) => category.id == id))}
+const getCategory = async (category) => {
+    return new Promise((resolve, reject) => {
+        resolve(products.find((product) => product.category == category))}
 )}
 
 export { getCategories, getCategory }

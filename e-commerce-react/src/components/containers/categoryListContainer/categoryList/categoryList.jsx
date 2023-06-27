@@ -1,4 +1,4 @@
-import products from "../../../../../data/products"
+import products from "../../../../data/products"
 import { Category } from "../category/category"
 import "../category.css"
 

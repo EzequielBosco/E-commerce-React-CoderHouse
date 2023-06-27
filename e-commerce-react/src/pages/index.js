@@ -1,5 +1,4 @@
 export { Signup } from "./signup"
 export { Login } from "./login"
 export { Home } from "./home"
-export { ProductListPage } from "./productListPage"
 export { Contact } from "./contact"

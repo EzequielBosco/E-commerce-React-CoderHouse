@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { Button } from "../../common/button";
+import { Select } from "../../common/select";
 
 const LoginForm = ({onSubmit}) => {
 
@@ -11,6 +12,19 @@ const LoginForm = ({onSubmit}) => {
         onSubmit(email, password)
     }
 
+    const goSignUp = () => {
+        console.log("ir a sign up")
+    }
+
+    // const selects = [
+    //     {value: 1, label: "auto"},
+    //     {value: 2, label: "casa"}
+    // ]
+
+    // const pruebaSelect = (e) => {
+    //     console.log(e.target.value)
+    // }
+
     return (
         <form onSubmit={submitLogin}>
             <div className="form-control">
@@ -21,7 +35,9 @@ const LoginForm = ({onSubmit}) => {
                 <label value="Contraseña"></label>
                 <input type="password" name="pass" id="pass-control" value={password} onChange={e => setPassword(e.target.value)}></input>
             </div>
-            <Button text="Iniciar sesion" type="submit"/>
+            <Button type="submit">Iniciar sesión</Button>
+            <Button text="Iniciar sesion" type="button" onClick={goSignUp}>Crear una cuenta</Button> 
+            {/* <Select items={selects} onChange={pruebaSelect}/> */}
         </form>
     )
 }

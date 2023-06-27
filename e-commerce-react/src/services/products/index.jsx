@@ -9,7 +9,7 @@ const getProducts = async () => {
 
 const getProduct = async (id) => {
     return new Promise((resolve, reject) => {
-        resolve(products.find((product) => product.id === id))}
+        resolve(products.find((product) => product.id === parseInt(id)))}
 )}
 
 export { getProducts, getProduct }
