@@ -6,10 +6,12 @@ const AuthContext = createContext({
 })
 
 const AuthProvider = ({ children }) => {
+    const [data, setData] = useState("eze")
+    const[me, setMe] = useState({})
+    const[isAuthenticated, setIsAuthenticated] = useState(false)
 
-    const [data, setData ] = useState("eze")
     return (
-        <AuthContext.Provider value={{ data, setData }}>
+        <AuthContext.Provider value={{ data, setData, me, isAuthenticated }}>
             {children}
         </AuthContext.Provider>
     )

@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { Button } from "../../common/button";
 import { Select } from "../../common/select";
+import { Checkboxes } from "../../common/checkboxes";
 
 const LoginForm = ({onSubmit}) => {
 
@@ -15,6 +16,12 @@ const LoginForm = ({onSubmit}) => {
     const goSignUp = () => {
         console.log("ir a sign up")
     }
+
+    const itemsCheck = [
+        {id: 1, label:'Terminos y condiciones', required:true, value:"Aceptar"},
+        {id: 2, label:'Politica de privacidad', required:true, value:"Aceptar"},
+        {id: 3, label:"Suscribirme al boletín de noticias", required:false, value:"Suscribirme"}
+    ]
 
     // const selects = [
     //     {value: 1, label: "auto"},
@@ -35,6 +42,7 @@ const LoginForm = ({onSubmit}) => {
                 <label value="Contraseña"></label>
                 <input type="password" name="pass" id="pass-control" value={password} onChange={e => setPassword(e.target.value)}></input>
             </div>
+            <Checkboxes items={itemsCheck} required={true}></Checkboxes>
             <Button type="submit">Iniciar sesión</Button>
             <Button text="Iniciar sesion" type="button" onClick={goSignUp}>Crear una cuenta</Button> 
             {/* <Select items={selects} onChange={pruebaSelect}/> */}

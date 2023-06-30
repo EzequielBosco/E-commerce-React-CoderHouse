@@ -1,3 +1,5 @@
 export { Button } from "./button"
 export { DivNews } from "./divNews"
 export { Select } from "./select"
+export { Checkboxes } from "./checkboxes"
+export { Loader } from "./loader"

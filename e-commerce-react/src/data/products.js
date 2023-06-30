@@ -43,15 +43,15 @@ const products = [
     },
     {
         id: 4,
-        name: 'Apple Watch Series 6',
+        name: 'Apple Watch 6',
         category: 'Watch',
         price: 199999,
         stock: 10,
         image: {
-            front: 'apple-watch-series-6-front.png',
-            back: 'apple-watch-series-6-back.png',
-            left: 'apple-watch-series-6-left.png',
-            right: 'apple-watch-series-6-right.png'
+            front: 'apple-watch-6-front.png',
+            back: 'apple-watch-6-back.png',
+            left: 'apple-watch-6-left.png',
+            right: 'apple-watch-6-right.png'
         },
         description: 'El Apple Watch Series 6 con monitorización de la frecuencia cardíaca, medición de oxígeno en sangre y una pantalla siempre activa.'
     },
@@ -183,15 +183,15 @@ const products = [
     },
     {
         id: 14,
-        name: 'Apple Watch Series 7',
+        name: 'Apple Watch 7',
         category: 'Watch',
         price: 249999,
         stock: 8,
         image: {
-            front: 'apple-watch-series-7-front.png',
-            back: 'apple-watch-series-7-back.png',
-            left: 'apple-watch-series-7-left.png',
-            right: 'apple-watch-series-7-right.png'
+            front: 'apple-watch-7-front.png',
+            back: 'apple-watch-7-back.png',
+            left: 'apple-watch-7-left.png',
+            right: 'apple-watch-7-right.png'
         },
         description: 'El Apple Watch Series 7 con pantalla siempre activa y nuevas funciones de seguimiento y salud.'
     },
@@ -253,15 +253,15 @@ const products = [
     },
     {
         id: 19,
-        name: 'Apple Watch Series 5',
+        name: 'Apple Watch 8',
         category: 'Watch',
         price: 169999,
         stock: 8,
         image: {
-            front: 'apple-watch-series-5-front.png',
-            back: 'apple-watch-series-5-back.png',
-            left: 'apple-watch-series-5-left.png',
-            right: 'apple-watch-series-5-right.png'
+            front: 'apple-watch-8-front.png',
+            back: 'apple-watch-8-back.png',
+            left: 'apple-watch-8-left.png',
+            right: 'apple-watch-8-right.png'
         },
         description: 'El Apple Watch Series 5 con pantalla siempre activa y seguimiento avanzado de la salud.'
     },

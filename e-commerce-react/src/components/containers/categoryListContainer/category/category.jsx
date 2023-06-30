@@ -1,12 +1,11 @@
 import { NavLink, useLocation } from "react-router-dom"
+import { useRouteContext } from "../../../../context/routeContext"
 import "../category.css"
 
 const Category = ({category}) => {
+    const { currentRoute } = useRouteContext()
     const image = require(`../../../../assets/${category}.png`)
-
-    const location = useLocation();
-
-    const isActive = location.pathname === `/productList/${category}`;
+    const isActive = currentRoute === `/productList/${category}`
 
     return (
         <div className={`${isActive ? "active" : ""}`}>

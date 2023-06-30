@@ -1,13 +1,14 @@
 import { Product } from "../product"
 import { useEffect, useState } from "react";
-import { getProducts } from "../../../../services/products";
+import { getProducts } from "../../../../services/firebase/products";
 
 const ProductList = () => {
 
     const [products, setProducts] = useState([])
 
     useEffect(() => {
-        getProducts().then((products) => setProducts(products));
+        getProducts().then((products) => setProducts(products))
+        console.log(products)
     }, [])
 
     const CardProducts = products.map((p) => {

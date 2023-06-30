@@ -4,7 +4,7 @@ const getProducts = async () => {
     return new Promise((resolve, reject) => {
         setTimeout(() => {
             resolve(products)
-        }, 800)}
+        }, 400)}
 )}
 
 const getProduct = async (id) => {
