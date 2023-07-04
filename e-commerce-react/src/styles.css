@@ -65,8 +65,11 @@ a:hover {
 }
 
 .active {
-    text-decoration: underline;
-    text-decoration-color: var(--color-detalles);
+    color: var(--color-detalles)
+}
+
+li a.active {
+    color: rgb(27, 27, 27);
 }
 
 main {

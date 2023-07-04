@@ -211,17 +211,17 @@ const products = [
     },
     {
         id: 16,
-        name: 'MacBook Pro',
+        name: 'iMac 24',
         category: 'Mac',
-        price: 1299999,
+        price: 1199999,
         stock: 5,
         image: {
-            front: 'mac-pro-front.png',
-            back: 'mac-pro-back.png',
-            left: 'mac-pro-left.png',
-            right: 'mac-pro-right.png'
+            front: 'imac-24-front.png',
+            back: 'imac-24-back.png',
+            left: 'imac-24-left.png',
+            right: 'imac-24-right.png'
         },
-        description: 'La MacBook Pro estrena una potencia y una eficiencia sin precedentes de la mano de los chips M2 Pro y M2 Max. Tiene un rendimiento fuera de serie, incluso cuando no está conectada a la corriente., ahora hasta 16 pulgadas.'
+        description: 'Este asombroso diseño, delgado y compacto, es posible gracias al chip M1, el primer sistema en chip para la Mac. Ahora, la iMac cabe en más lugares que nunca.'
     },
     {
         id: 17,

@@ -1,7 +1,7 @@
 import "./home.css"
 import { Link } from "react-router-dom"
-import { Button } from "../../components/common"
-import { DivNews } from "../../components/common"
+import { Button } from "../../common"
+import { DivNews } from "../../common"
 import ReactPlayer from "react-player"
 import { useState, useEffect } from "react"
 
@@ -31,7 +31,7 @@ const Home = () => {
             </section>
             <section id="imagen-section-2-home">
             <h2 className="text-center m-3 p-2 title">Maravilla tras maravilla.</h2>
-            <Link to="/productList/iphone/18"><Button className="button-color">Más información</Button></Link>
+            <Link to="/productList/iPhone"><Button className="button-color">Más información</Button></Link>
             </section>
             <section id="section-2-home">
                 <DivNews/>

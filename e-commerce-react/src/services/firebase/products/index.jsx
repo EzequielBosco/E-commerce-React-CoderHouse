@@ -1,7 +1,7 @@
-import { collection, getDocs, doc, docs, getFirestore } from "firebase/firestore"
+import { collection, getDocs, getDoc, doc } from "firebase/firestore"
+import { db } from "../config"
 
 const getProducts = async () => {
-    const db = getFirestore()
 
     const collectionRef = collection(db, "productos")
     const snapshot = await getDocs(collectionRef) 
@@ -13,4 +13,17 @@ const getProducts = async () => {
     return null
 }
 
-export { getProducts }
+const getProduct = async (id) => {
+    const productsRef = doc(db, "productos", id)
+    const docSnapshot = await getDoc(productsRef)
+
+    if (docSnapshot.exists()) {
+        return { id: docSnapshot.id, ...docSnapshot.data() }
+    }
+
+    return null
+}
+
+export { getProducts, getProduct }
+
+

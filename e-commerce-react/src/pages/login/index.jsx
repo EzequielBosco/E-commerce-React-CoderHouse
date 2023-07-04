@@ -1,5 +1,5 @@
-import { LoginForm } from "../../components/forms/login"
-import { useAuth } from "../../components/hooks/useAuth"
+import { LoginForm } from "../../forms/login"
+import { useAuth } from "../../hooks/useAuth"
 
 const Login = () => {
     const { login, isAuth } = useAuth()
