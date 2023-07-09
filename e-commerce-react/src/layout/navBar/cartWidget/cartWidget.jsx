@@ -10,7 +10,7 @@ const CartWidget = () => {
     return (
         <div className='d-flex'>
             <NavLink to="/cart"><img src={cartImage} height="18px" /></NavLink>              
-            {cart.length > 0 ? cart.reduce((sum, product) => sum + product.quantity, 0) : ""}
+            {cart.length > 0 ? `(${cart.reduce((sum, product) => sum + product.quantity, 0)})` : ""}
         </div>
     )
 }

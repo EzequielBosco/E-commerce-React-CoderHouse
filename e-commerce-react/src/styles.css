@@ -4,6 +4,15 @@
     --color-oscuro-hover: rgb(19, 19, 19);
     --color-detalles: rgba(71, 118, 219, 0.938);
     --color-detalles-hover: rgb(101, 141, 228);
+    display: flex;
+    flex-direction: column;
+    min-height: 50vh;
+}
+
+
+html, body {
+    height: 100%;
+    margin: 0;
 }
 
 body {

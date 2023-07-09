@@ -51,8 +51,16 @@ function ProductDetailContainer() {
         }, 2000);
     }
 
+    const getProductStock = () => {
+        const productInCart = cart.find((p) => p.id === product.id)
+        if (productInCart) {
+          return productInCart.stock
+        }
+        return product.stock
+    }
+
     return(
-        <div className="container">
+        <div className="container container-page">
             <div className="container mt-2">
                 <h2>{product.name}</h2>
                 <hr></hr>
@@ -65,10 +73,10 @@ function ProductDetailContainer() {
                     <h2 className="title-detail">{product.name}</h2>
                     <h3>Categoría: {product.category}</h3>
                     <h5 id="price">Precio: ${product.price}</h5>
-                    {cart.length > 0 && product.stock > 1 ? 
+                    {cart.length > 0 && getProductStock > 1 ? 
                     <>{cart.map((p) => (
                     <p>Stock disponible: <strong>{p.stock}</strong></p>))
-                    }</> : <p>Stock disponible: <strong>{product.stock}</strong></p>}
+                    }</> : <p>Stock disponible: <strong>{getProductStock()}</strong></p>}
                     <small>{product.description}</small>
                     <br></br>
                     <div className="d-flex gap-3">
