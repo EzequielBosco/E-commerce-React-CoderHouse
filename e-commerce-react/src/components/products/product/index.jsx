@@ -1,10 +1,12 @@
+import { useContext } from "react"
 import { Button } from "../../../common/button"
 import "./product.css"
 import { Link } from "react-router-dom"
+import { CartContext } from "../../../context/contextCart"
 // import { AuthContext } from "../../../../context"
 // import { useContext } from "react"
 
-const Product = ({id, name, category, price, stock, image, description}) => {
+const Product = ({id, name, category, price, stock, image, description, textButton}) => {
 
     // const {data, setData, me, isAuthenticated} = useContext(AuthContext)
 
@@ -18,8 +20,8 @@ const Product = ({id, name, category, price, stock, image, description}) => {
             <div className="info mt-2">
                 <h3 className={name}>{name}</h3>
                 <span>Categoría: {category}</span>
-                <span>Precio: {price} $</span>
-                <Link to={`/productList/${category}/${id}`}><Button className="btn-product" type="submit">Ver más</Button></Link>
+                <span>Precio: ${price} </span>
+                <Link to={`/productList/${category}/${id}`}><Button className="btn-product" type="submit">{textButton}</Button></Link>
             </div>
         </div>
     )

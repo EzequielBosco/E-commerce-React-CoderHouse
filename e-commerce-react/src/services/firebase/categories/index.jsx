@@ -1,4 +1,4 @@
-import { collection, getDocs, doc, docs, where, query } from "firebase/firestore"
+import { collection, getDocs, where, query } from "firebase/firestore"
 import { db } from "../config"
 
 const getCategories = async (category) => {

@@ -1,1 +1,1 @@
-export { LoginForm } from "./login"
+export { PurchaseForm } from "./purchase"

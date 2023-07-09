@@ -14,7 +14,7 @@ const ProductListContainer = () => {
 
     return( 
         <div id="list-products">
-            { products && <ProductList products={products} />}
+            { products && <ProductList products={products}/>}
         </div>
     )
 }

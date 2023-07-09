@@ -9,7 +9,7 @@ import { ProductListContainer } from "../../products/productListContainer"
 
 const CategoryDetailContainer = () => {
  
-    const category = useParams().category
+    const { category } = useParams()
     const [products, setProducts] = useState([])
 
     useEffect(() => {

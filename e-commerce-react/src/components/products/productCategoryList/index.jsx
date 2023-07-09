@@ -11,7 +11,7 @@ const ProductCategoryList = ({ category }) => {
 
     const CardProducts = productList.map((p) => {
         return(<Product key={p.id} id={p.id} name={p.name} image={p.image} category={p.category} price={p.price} description={p.description}
-        stock={p.stock} />)
+        stock={p.stock} textButton="Ver más"/>)
     })
 
     return( 
