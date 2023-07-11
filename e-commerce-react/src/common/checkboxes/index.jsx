@@ -3,7 +3,7 @@ const Checkboxes = ({ items, onChange }) => {
         <>
             {items.map((item) => {
                 return ( 
-                    <div>
+                    <div className="d-flex gap-2 m-2">
                         <input type="checkbox" id={`checkbox${item.value}`} required={item.required ? true : false} onChange={onChange}/>
                         <label htmlFor={`checkbox${item.value}`}>{item.label}</label>
                     </div>

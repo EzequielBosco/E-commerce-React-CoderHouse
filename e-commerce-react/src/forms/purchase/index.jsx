@@ -47,6 +47,7 @@ const PurchaseForm = () => {
 
     return (
         <form onSubmit={submitPurchase} className="form">
+            <h2 className="m-2 text-center">Complete el formulario</h2>
             <div className="flex">
                 <label value="Nombre">Nombre:
                 <input className="input" type="text" name="name" id="name" value={fields["name"]} onChange={e => setFields((state) => ({ ...state, name: e.target.value }))} ></input>

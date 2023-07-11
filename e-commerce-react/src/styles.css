@@ -51,6 +51,8 @@ ul .active {
 a {
     color:black;
     text-decoration: none;
+    display: flex;
+    align-items: center;
 }
 
 a:active {

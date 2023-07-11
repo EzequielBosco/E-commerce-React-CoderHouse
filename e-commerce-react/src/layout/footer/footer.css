@@ -3,6 +3,7 @@ footer {
     transition: 1.2s ease; 
     height: 5rem;
     background-color: black;
+    padding: 0.5rem;
 }
 
 footer:hover {
@@ -21,4 +22,16 @@ footer a:hover {
 footer a:active {
     color: rgb(233, 233, 233);
     text-decoration-color: white;
+}
+
+@media screen and (max-width: 1080px) {
+    footer {
+        height: 11rem;
+    }
+}
+
+@media screen and (max-width: 749px) {
+    footer {
+        height: 15rem;
+    }
 }
