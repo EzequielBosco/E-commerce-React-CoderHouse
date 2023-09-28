@@ -26,7 +26,7 @@ const PurchaseForm = () => {
 
     const submitPurchase = ( event ) => {
         event.preventDefault()
-
+        
         if (fields.email !== fields.email1) {
             return
         }
@@ -50,19 +50,19 @@ const PurchaseForm = () => {
             <h2 className="m-2 text-center">Complete el formulario</h2>
             <div className="flex">
                 <label value="Nombre">Nombre:
-                <input className="input" type="text" name="name" id="name" value={fields["name"]} onChange={e => setFields((state) => ({ ...state, name: e.target.value }))} ></input>
+                <input className="input" type="text" name="name" id="name" value={fields["name"]} onChange={e => setFields((state) => ({ ...state, name: e.target.value }))} required></input>
                 </label>
                 <label value="lastname">Apellido
                 <input className="input" type="text" name="lastname" id="pass-control" value={fields["lastname"]} onChange={e => setFields((state) => ({ ...state, lastname: e.target.value }))}></input>
                 </label>
                 <label value="Telefono">Teléfono
-                <input className="input" type="number" name="phone" id="phone" value={fields["phone"]} onChange={e => setFields((state) => ({ ...state, phone: e.target.value }))} ></input>
+                <input className="input" type="number" name="phone" id="phone" value={fields["phone"]} onChange={e => setFields((state) => ({ ...state, phone: e.target.value }))} required></input>
                 </label>
                 <label value="Correo">Correo
-                <input className="input" type="email" name="email" id="email-control" value={fields["email"]} onChange={e => setFields((state) => ({ ...state, email: e.target.value }))} ></input>
+                <input className="input" type="email" name="email" id="email-control" value={fields["email"]} onChange={e => setFields((state) => ({ ...state, email: e.target.value }))} required></input>
                 </label>
                 <label value="Correo">Repetir correo
-                <input className="input" type="email1" name="email1" id="email-control" value={fields["email1"]} onChange={e => setFields((state) => ({ ...state, email1: e.target.value }))} ></input>
+                <input className="input" type="email1" name="email1" id="email-control" value={fields["email1"]} onChange={e => setFields((state) => ({ ...state, email1: e.target.value }))} required></input>
                 </label>
             </div>
             <Checkboxes items={itemsCheck} required={true}></Checkboxes>

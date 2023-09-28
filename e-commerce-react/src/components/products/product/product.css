@@ -27,9 +27,9 @@
 }
 
 .card-product:hover {
-    box-shadow: 0.1px 5px 10px 0px rgba(99, 113, 134, 0.452);
+    box-shadow: 0.1px 5px 10px 0px rgba(143, 143, 143, 0.753);
     transform:translateY(-4px);
-    border: 1px unset black
+    border: 1px unset rgb(22, 22, 22)
 }
 
 .card-product .img {
