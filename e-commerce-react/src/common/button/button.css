@@ -1,22 +1,25 @@
 .btn-product {
     color: #ffffff;
-    padding-left: 8px;
-    padding-right: 8px;
+    padding-left: 9px;
+    padding-right: 9px;
     font-size: 16px;
-    border-radius: 0.5em;
-    background: radial-gradient( 100% 100% at 100% 0%, #568bbd 0%, var(--color-detalles) 100% );
-    border: 1px solid var(--color-detalles);
+    border-radius: 15px;
+    background: var(--color-azul);
+    border: none;
+    /* border: 1px solid var(--color-detalles); */
     transition: all .3s;
-    box-shadow: 0.7px 0.8px 1px #f0f0f0;
+    /* box-shadow: 0.7px 0.8px 1px #f0f0f0; */
     margin-top: auto;
 }
 .btn-product:hover {
     background-color: var(--color-detalles-hover);
+    border: none;
     transform: translateY(0.05em);
 }
       
 .btn-product:active {
     box-shadow: none;
+    background-color: var(--color-azul);
     transform: translateY(0);
 }
 
